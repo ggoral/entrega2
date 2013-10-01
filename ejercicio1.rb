@@ -3,25 +3,25 @@
 
 module Caminante
   def caminar
-    puts "caminar"
+    "caminar"
   end
 end
 
 module Nadador
   def nadar
-    puts "nadar"
+    "nadar"
   end
 end
 
 module Volador
   def volar
-    puts "volar"
+    "volar"
   end
 end
 
 module Reptante
   def reptar
-    puts "reptar"
+    "reptar"
   end
 end
 
@@ -33,7 +33,7 @@ class Hombre < Mamifero
   include Nadador
 
   def hablar
-    puts "hablar"
+    "hablar"
   end
 
 end
@@ -70,7 +70,7 @@ class Boa < Reptil
    include Reptante
    
    def presionar
-     puts "presionar"
+     "presionar"
    end
 end
 
@@ -78,7 +78,7 @@ class Cobra < Reptil
    include Reptante
    
    def morder
-      puts "morder"
+      "morder"
    end
 end
 
@@ -89,7 +89,7 @@ class Sapo < Anfibio
    include Nadador
    
    def saltar
-      puts "saltar"
+      "saltar"
    end
 end
 
@@ -99,9 +99,4 @@ end
 class Tiburon < Pez
    include Nadador
 end
-
-
-unHombre = Hombre.new
-unHombre.hablar
-
 
