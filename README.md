@@ -11,5 +11,5 @@
 * `purchase.rb`: Clase Pruchase.
 * `purchase_test.rb`: Pruebas de Unidad sobre la clase Purchase.
  
-*`ggoral`: Path con el nombre de usuario y repositorio de github.
+* `ggoral`: Path con el nombre de usuario y repositorio de github.
 
