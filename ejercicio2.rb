@@ -19,7 +19,6 @@ p.add p1
 p.add p1
 
 puts p
-puts p.total
 
 # Descuento de 10% en tu compra si llevás algún martillo!
 #p.apply_discount do |purchase|
@@ -27,10 +26,12 @@ puts p.total
 #  purchase.total -= purchase.total * 0.1 if hammers.any?
 #end
 
+# Descuento del 20% es una compra con mas de 10 productos 
 #p.apply_discount do |purchase|
 #  purchase.total *= 0.8 if purchase.size > 10
 #end
 
+# Descuento 3x2 llevo 3 productos y pago 2
 p.apply_discount do |purchase|
   products_uniq = purchase.products.uniq
   products_uniq.each do |product| 
@@ -39,4 +40,4 @@ p.apply_discount do |purchase|
   end
 end
 
-puts p.total
+puts "Precio total: #{p.total}"

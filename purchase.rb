@@ -29,7 +29,7 @@ class Purchase
   end
   
   def to_s
-    puts "Productos"
+    puts "Productos:"
     @products.each {|x| puts x}
     ""
   end
