@@ -4,11 +4,10 @@
 require_relative "product.rb"
 
 class Purchase 
-  attr_accessor :products, :total, :discounts
+  attr_accessor :products, :total
 
   def initialize()
     @products = Array.new
-    @discounts = Array.new
     @total = 0
   end
   
