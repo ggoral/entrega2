@@ -28,9 +28,9 @@ class Purchase
   end
   
   def to_s
-    puts "Productos:"
-    @products.each {|x| puts x}
-    ""
+    string = "Productos:\n"
+    @products.each {|x| string << x.to_s + "\n" }
+    string
   end
 end
 
